@@ -29,13 +29,19 @@ export class SessionService {
       .catch(this.handleError);
   }
 
+  // logout() {
+  //   return this.http.post(`${this.BASE_URL}/logout`, {}, this.options)
+  //     .map(res =>{
+  //       localStorage.removeItem('user');
+  //        res.json()
+  // })
+  // .catch(this.handleError);
+  // }
+
   logout() {
-    return this.http.post(`${this.BASE_URL}/logout`, {}, this.options)
-      .map(res =>{
-        localStorage.removeItem('user');
-         res.json()
-  })
-  .catch(this.handleError);
+    return this.http.post(`${this.BASE_URL}/logout`, {})
+      .map(res => res.json())
+      .catch(this.handleError);
   }
   
   isLoggedIn() {

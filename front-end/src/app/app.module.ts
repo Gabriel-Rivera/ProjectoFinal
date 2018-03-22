@@ -21,7 +21,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ProducteditComponent } from './productedit/productedit.component';
 
-import { EnterDetailsGuardService } from './services/enterDetailGuard.service'
+import { EnterDetailsGuardService } from './services/enterDetailGuard.service';
+import { PaymentComponent } from './payment/payment.component'
 
 
 const routes = [
@@ -31,7 +32,8 @@ const routes = [
   {path:'detail-article/:id', component:DetailArticleComponent},
   {path: 'detail-article/:id/edit', component: ProducteditComponent},
   {path:'login', component:LoginComponent},
-  {path:'signup', component:SignupComponent} 
+  {path:'signup', component:SignupComponent},
+  {path:'payment', component:PaymentComponent}  
 ];
 
 
@@ -46,7 +48,8 @@ const routes = [
    DetailArticleComponent,
    LoginComponent,
    SignupComponent,
-   ProducteditComponent
+   ProducteditComponent,
+   PaymentComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@ export class SignupComponent implements OnInit {
 
   sendSignupForm(myForm){
         this.service.signup(myForm.value)
-          .subscribe(()=> this.router.navigate(['']))
+          .subscribe(()=> this.router.navigate(['login']))                
       }
 
   ngOnInit() {

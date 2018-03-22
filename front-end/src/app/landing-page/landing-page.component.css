@@ -26,3 +26,13 @@
     background: black;
     border-radius: 2%;
 }
+.logo{
+    background-image: url("/home/gabriel/Documentos/ProjectoFinal/back-end/public/images/logo.png");
+    background-size: cover;
+	width: 300px;
+	height: 300px;
+	border: 1px solid black;
+	position: absolute;
+	top:200px;
+	left:100px;
+}

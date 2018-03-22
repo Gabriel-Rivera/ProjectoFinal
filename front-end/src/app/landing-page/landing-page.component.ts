@@ -13,10 +13,10 @@ export class LandingPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  logout(){
-    this.session.logout();
-    localStorage.clear();
-    location.reload();
-  }
+  // logout(){
+  //   this.session.logout();
+  //   localStorage.clear();
+  //   location.reload();
+  // }
 
 }

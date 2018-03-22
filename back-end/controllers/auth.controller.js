@@ -1,6 +1,7 @@
 const User = require('../models/User');
 
 exports.signUp = (req,res,next)=>{
+    console.log(req.body)
     User.register(req.body, req.body.password, (err, account)=>{
         if(err) return res.status(500).send(err);
         return res.status(201).json(account);

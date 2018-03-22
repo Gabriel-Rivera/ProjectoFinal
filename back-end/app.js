@@ -29,8 +29,12 @@ app.use(cors(corsOptions));
 
 var mongoose = require ('mongoose');
 
-mongoose.connect("mongodb://gabo:gabo@ds221609.mlab.com:21609/ironshop")
-  .then(console.log("Connected to DB!!!"))
+// mongoose.connect("mongodb://gabo:gabo@ds221609.mlab.com:21609/ironshop")
+//   .then(console.log("Connected to DB!!!"))
+
+
+mongoose.connect("mongodb://localhost/article_shop")
+.then(console.log("Connected to DB!!!"))
 
 
 // view engine setup

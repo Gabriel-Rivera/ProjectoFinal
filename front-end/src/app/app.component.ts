@@ -13,12 +13,18 @@ export class AppComponent {
 constructor(private sessionS : SessionService,
 private router:Router){}
 
+ngOnInit(){
+  this.user= JSON.parse(localStorage.getItem('user'));
+  console.log(this.user);
+}
+
 logout(){
   localStorage.removeItem('user');
   this.user=null;
   this.router.navigate(['']);
 
-  this.sessionS.logout()
-    .subscribe(()=> console.log("te has deslogueado!"))
+//   this.sessionS.logout()
+//     .subscribe(()=> console.log("te has deslogueado!"))
+// }
 }
 }

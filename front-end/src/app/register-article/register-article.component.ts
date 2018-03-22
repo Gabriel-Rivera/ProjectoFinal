@@ -30,7 +30,7 @@ export class RegisterArticleComponent implements OnInit {
       form.append('category', newForm.value.category);
     };
     this.uploader.uploadAll();
-    this.uploader.onCompleteItem = () => this.route.navigate(['']);
+    this.uploader.onCompleteItem = () => this.route.navigate(['product-list']);
    }
   
 }
