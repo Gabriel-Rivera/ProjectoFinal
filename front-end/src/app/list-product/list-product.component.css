@@ -1,0 +1,22 @@
+
+.photo{
+    width: 250px;
+    height: 250px;
+}
+.container{
+    padding-top: 50px;
+    width: 100%;
+    display:flex;  
+    flex-wrap: wrap;
+}
+.Article{
+    justify-content: center;
+    display: flex;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    border-style: outset; 
+}
+.Article:hover{
+    
+}

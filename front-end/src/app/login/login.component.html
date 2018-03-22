@@ -1,0 +1,15 @@
+  <form>
+  
+    <div class="container">
+      <label for="uname"><b>Email</b></label>
+      <input [(ngModel)]="formInfo.email" type="text" placeholder="Enter Email" name="Email" required><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input [(ngModel)]="formInfo.password" type="password" placeholder="Enter Password" name="password" required><br>
+  
+      <button (click)="sendForm()">Login</button>
+    </div>
+  
+    <div class="container" style="background-color:#f1f1f1">
+    </div>
+  </form>

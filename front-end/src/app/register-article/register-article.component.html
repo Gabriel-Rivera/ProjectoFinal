@@ -1,0 +1,19 @@
+<form class="formulario" (ngSubmit)="submitForm(myForm)" #myForm="ngForm">
+  <h1 class="formulario__titulo">Nuevo Articulo</h1>
+  <input type="text" class="formulario__input" name="title" [(ngModel)]="title">
+  <label for="" class="formulario__label">Title</label>
+  <input type="text" class="formulario__input" name="desc" [(ngModel)]="desc">
+  <label for="" class="formulario__label">Description</label>
+  <input type="text" class="formulario__input" name="price" [(ngModel)]="price">
+  <label for="" class="formulario__label">Price</label>
+  <select name="category" id="" [(ngModel)]="category">
+    <option value=""></option>
+    <option value="electronica">Electronica</option>
+    <option value="computadora">Computadora</option>
+  </select>
+  <label for="" class="formulario__label">Category</label>
+
+  <input type="file" name="file" ng2FileSelect [uploader]="uploader"/> <br>
+  <input type="submit" class="formulario__submit">
+
+</form>

@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="Article" *ngIf="single">
+      <h4>{{single.title}}</h4>
+      <img id="photo" [src]="'http://localhost:3000/' + single.image" >   
+      <p>{{single.desc}}</p>
+      <h3>{{single.price}}</h3>
+      <h6>{{single.countStock}}</h6>
+      <h6>{{single.category}}</h6>
+      <a [routerLink]="['/detail-article', single._id, 'edit']">Go to edit</a>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<p>
+  list-product works!
+</p>
+<div class="container">
+<div class="Article" *ngFor = "let product of productList">
+   <!-- <div>
+    <h4>{{product.title}}</h4>
+    <a [routerLink]="['/detail-article',product._id]"><img class="photo" [src]="'http://localhost:3000/' + product.image" ></a>
+    <p>{{product.desc}}</p>
+    <h3>{{product.price}}</h3>
+    <h6>{{product.countStock}}</h6>
+    <h6>{{product.category}}</h6>
+   </div>
+  </div>-->
+<div>
+    <div>
+      <div class="card h-100">
+            <a [routerLink]="['/detail-article',product._id]"><img class="photo" [src]="'http://localhost:3000/' + product.image" ></a>
+  
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="#">{{product.title}}</a>
+          </h4>
+          <h5 class="card-text">${{product.price}}</h5>
+          <p class="card-text">{{product.desc}}</p>
+          <p class="card-text">{{product.category}}</p>
+        </div>
+        <div class="card-footer" >
+          <small style="color:yellow" class="text-muted">★ ★ ★ ★ ★</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+
